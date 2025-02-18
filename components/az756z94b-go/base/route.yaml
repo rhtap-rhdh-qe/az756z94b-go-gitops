@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: az756z94b-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: az756z94b-go 
+  name: az756z94b-go
+spec:
+  port:
+    targetPort: 8081 
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: az756z94b-go
+    weight: 100 

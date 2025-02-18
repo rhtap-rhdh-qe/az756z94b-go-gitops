@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: az756z94b-go-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/az756z94b-go
